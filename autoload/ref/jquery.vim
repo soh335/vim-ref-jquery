@@ -1,4 +1,4 @@
-" A ref source for jquery manual.
+" A ref source for jquery documentation.
 " Version: 0.0.1
 " Author : soh335
 " License: MIT License
