@@ -1,0 +1,55 @@
+*ref-jquery.txt*	jQuery ドキュメント用の ref ソース。
+
+Version: 0.0.1
+Author : soh335
+License: MIT License
+
+==============================================================================
+目次						*ref-jquery-contents*
+
+概要				|ref-jquery-introduction|
+カスタマイズ			|ref-jquery-customizing|
+更新履歴			|ref-jquery-changelog|
+
+
+==============================================================================
+概要						*ref-jquery-introduction*
+
+*ref-jquery* は jQuery ドキュメント用 の |ref| のソースです。
+
+
+要件:
+- |ref| 0.3.2 以降
+- Alternative jQuery Documentation (offline HTML version) (http://jqapi.com/)
+
+
+
+==============================================================================
+カスタマイズ					*ref-jquery-customizing*
+
+g:ref_jquery_path				*g:ref_jquery_path*
+			jQuery ドキュメントのパスです。パスはローカルのディレクトリ
+			である必要があります。
+
+g:ref_jquery_cmd				*g:ref_jquery_cmd*
+			html を表示するためのコマンドです。%s は html ファイル
+			に置き換えられます。コマンドとその引数を含む |List| も
+			指定できます。
+			デフォルト値は以下の物でコマンドが実行可能なものです。
+			- 'elinks -dump -no-numbering -no-references %s'
+			- 'w3m -dump %s'
+			- 'links -dump %s'
+			- 'lynx -dump -nonumbers %s'
+
+
+
+==============================================================================
+更新履歴					*ref-jquery-changelog*
+
+0.0.1	2011-01-18
+	- 初版。
+
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
+

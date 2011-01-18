@@ -1,0 +1,58 @@
+*ref-jquery.txt*	A ref source for jQuery documentation.
+
+Version: 0.0.1
+Author : soh335
+License: MIT License
+
+==============================================================================
+CONTENTS						*ref-jquery-contents*
+
+INTRODUCTION			|ref-jquery-introduction|
+CUSTOMIZING			|ref-jquery-customizing|
+CHANGELOG			|ref-jquery-changelog|
+
+
+==============================================================================
+INTRODUCTION						*ref-jquery-introduction*
+
+*ref-jquery* is a source for |ref| for jQuery documentation.
+
+
+要件:
+- |ref| 0.3.2 or later
+- Alternative jQuery Documentation (offline HTML version) (http://jqapi.com/)
+
+
+
+==============================================================================
+CUSTOMIZING					*ref-jquery-customizing*
+
+g:ref_jquery_path				*g:ref_jquery_path*
+
+			The path of jQuery documentation. The path should be a 
+                        local directory.
+
+g:ref_jquery_cmd				*g:ref_jquery_cmd*
+			A command to view the html file.  %s is replaced by
+			the html file name.  This allows a |List| that
+			includes command and arguments.
+			The default value is the executable one of the
+			following:
+			- 'elinks -dump -no-numbering -no-references %s'
+			- 'w3m -dump %s'
+			- 'links -dump %s'
+			- 'lynx -dump -nonumbers %s'
+
+
+
+==============================================================================
+CHANGELOG					*ref-jquery-changelog*
+
+0.0.1	2011-01-18
+	- Initial version.
+
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
+
+
