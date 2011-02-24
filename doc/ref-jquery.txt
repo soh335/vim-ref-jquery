@@ -18,8 +18,8 @@ INTRODUCTION						*ref-jquery-introduction*
 *ref-jquery* is a source for |ref| for jQuery documentation.
 
 
-要件:
-- |ref| 0.3.2 or later
+Requirements:
+- |ref| 0.4.3 or later
 - Alternative jQuery Documentation (offline HTML version) (http://jqapi.com/)
 
 

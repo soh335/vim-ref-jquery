@@ -131,7 +131,7 @@ endfunction
 function! ref#jquery#define()  " {{{2
   return s:source
 endfunction
-call ref#register_detection('javascript', 'jquery')
+call ref#register_detection('javascript', 'jquery', 'append')
 
 
 
