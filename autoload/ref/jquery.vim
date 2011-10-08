@@ -32,7 +32,7 @@ endfunction
 
 
 function! s:source.get_body(query)  " {{{2
-  let name = substitute(tolower(a:query), '\$', 'jQuery', '')
+  let name = substitute(a:query, '\$', 'jQuery', '')
   let pre = g:ref_jquery_path . '/'
 
   let file = pre . name . '/index.html'
@@ -52,7 +52,7 @@ endfunction
 
 
 function! s:source.complete(query)  " {{{2
-  let name = substitute(tolower(a:query), '\$', 'jQuery', '')
+  let name = substitute(a:query, '\$', 'jQuery', '')
   let pre = g:ref_jquery_path . '/'
 
   let list = filter(copy(s:cache()), 'v:val =~# name')
@@ -69,6 +69,7 @@ function! s:source.get_keyword()  " {{{2
   setlocal isk& isk+=. isk+=$
   let kwd = expand('<cword>')
   let &l:isk = isk
+  let kwd = substitute(kwd, '^\.', '', '')
   return kwd
 endfunction
 
